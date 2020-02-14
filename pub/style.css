@@ -1,0 +1,131 @@
+/*0C4A60 / EF6C33 / ABDFF1 / E1DDDB*/
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #0C4A60;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+p{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#top-section{
+	height: 700px;
+	text-align: center;
+}
+
+#top-section img{
+	width: 30px;
+	height: auto;
+	padding-top: 100px;
+}
+
+#sketch-holder {
+  	margin-top: 180px;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.page-wrapper{
+	width: 100vw;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+.about-me{
+	height: 100%;
+	color: white;
+}
+
+.about-me h1{
+	width: 100%;
+	padding-top: 70px;
+	font-size: 50px;
+}
+
+.about-text{
+	margin-top: -120px; 
+	display: inline-block;
+	width: 60%;
+	font-size: 20px;
+}
+
+.about-cards{
+	padding-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.card1{
+	width: 25%;
+}
+
+.card2{
+	width: 25%;
+}
+
+.projects{
+	height: 600px;
+	padding-top: 100px;
+	background-color: #E1DDDB;
+	color: black;
+}
+
+.project-cards{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 1em;
+	justify-content: center;
+}
+
+.pcard{
+	padding: 2em;
+	font-size: 15px;
+}
+
+.pcard p{
+	color: grey;
+}
+
+.pcard a{
+	position: relative;
+	text-align: center;
+	padding: 5px 30px;
+	bottom: 10px;
+}
+
+.myButton {
+	background-color:#e6e6e6;
+	cursor:pointer;
+	color:#000000;
+	font-size:12px;
+	font-style:italic;
+	padding:6px 20px;
+	text-decoration:none;
+	outline: none;
+}
+
+.myButton:hover {
+	background-color:black;
+	color: white;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+@media screen and (max-width: 950px){
+	.pcard{
+		font-size: 10px;
+	}
+}
