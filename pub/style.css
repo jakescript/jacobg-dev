@@ -1,13 +1,12 @@
-/*0C4A60 / EF6C33 / ABDFF1 / E1DDDB*/
-
 html, body {
   height: 100%;
   padding: 0;
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  background-color: #0C4A60;
+  background-color: #0B0C10;
   color: white;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 p{
@@ -21,10 +20,15 @@ p{
 	text-align: center;
 }
 
-#top-section img{
-	width: 30px;
-	height: auto;
-	padding-top: 100px;
+#top-titles{
+	padding-bottom: 250px;
+}
+
+.icons{
+	color: white;
+	font-size: 3em;
+	text-decoration: none;
+	padding: 10px;
 }
 
 #sketch-holder {
@@ -42,8 +46,8 @@ p{
 }
 
 .about-me{
-	height: 100%;
-	color: white;
+	height: auto;
+	padding-bottom: 30px;
 }
 
 .about-me h1{
@@ -61,28 +65,23 @@ p{
 
 .about-cards{
 	padding-top: 30px;
-	display: flex;
+	display: grid;
+	grid-template-columns: 30% 30%;
+	grid-gap: 1em;
 	justify-content: center;
 }
 
-.card1{
-	width: 25%;
-}
-
-.card2{
-	width: 25%;
-}
-
 .projects{
-	height: 600px;
-	padding-top: 100px;
-	background-color: #E1DDDB;
+	height: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #C5C6C7;
 	color: black;
 }
 
 .project-cards{
 	display: grid;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 40% 40%;
 	grid-gap: 1em;
 	justify-content: center;
 }
@@ -90,42 +89,57 @@ p{
 .pcard{
 	padding: 2em;
 	font-size: 15px;
+	color: #0b0C10;
 }
 
 .pcard p{
-	color: grey;
-}
-
-.pcard a{
-	position: relative;
-	text-align: center;
-	padding: 5px 30px;
-	bottom: 10px;
+	color: #1F2833;
 }
 
 .myButton {
-	background-color:#e6e6e6;
+	border: none;
+	background-color: #45A29E;
+	color: white;
 	cursor:pointer;
-	color:#000000;
-	font-size:12px;
-	font-style:italic;
 	padding:6px 20px;
 	text-decoration:none;
 	outline: none;
+	transition: all .5s;
 }
 
 .myButton:hover {
-	background-color:black;
-	color: white;
+	background-color: #66FCF1;
+	color: #1F2833;
 }
 
-.myButton:active {
-	position:relative;
-	top:1px;
+#social-icons{
+	font-size: 6px;
+}
+
+#footer{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	justify-content:center;
+	align-items: center;
+	text-align: center;
+	height: 50px;
 }
 
 @media screen and (max-width: 950px){
 	.pcard{
 		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 865px){
+	#top-titles{
+		padding-bottom: 150px;
+	}
+	.about-cards{
+		grid-template-columns: 100%;
+	}
+
+	.project-cards{
+		grid-template-columns: 100%;
 	}
 }

@@ -7,12 +7,17 @@
 	<title>jacobg | developer - student</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+	<script src="./lib/p5.js"></script>
+	<script src="https://kit.fontawesome.com/41219a36f9.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div id="top-section">
-		<div id="sketch-holder"></div>
-		<p> developer - student - creative </p>
-		<a href="#about"><img src="./arr.png"></a>
+		<div id="top-titles">
+			<div id="sketch-holder"></div>
+			<p> developer - student - creative </p>
+		</div>
+		<a href="#about" class="icons"><i class="fas fa-angle-down"></i></a>
+		
 	</div>
 	
 
@@ -21,17 +26,19 @@
 		<div class="about-text">
 			<p>I am a full-stack developer based out of the Greater New York Area. My programming addiction came to blossom around 2017 when I hit the ground running. For me programming is my preferred form of art, from database structures to what makes a great user experience. Such a unique and amazing field we have to study. My resume is avalible below as well as some of my favorite projects I've worked on. If you are interested in talking please contact me anytime, seriously, anytime.</p>
 		</div>
+		
 		<div class="about-btns">
-			<a href="mailto:by.jakeg@gmail.com"><button>contact</button></a>
-			<a href="#"><button>resume</button></a>
+			<a href="mailto:by.jakeg@gmail.com" class="myButton">contact</a>
+			<a href="resume.pdf" target="_blank" class="myButton">resume</a>
 		</div>
+
 		<div class="about-cards">
-			<div class="card1">
+			<div>
 				<h2>Technical Skills</h2>
 				<p>Adobe Creative Cloud Suite</p>
 				<p>Microsoft Office</p>
 			</div>
-			<div class="card2">
+			<div>
 				<h2>Application Skills</h2>
 				<p>HTML</p>
 				<p>CSS</p>
@@ -72,7 +79,17 @@
 				<a href="https://github.com/jakescript/RubiksCubeGo" target="_blank" class="myButton" >github</a>
 			</div>
 		</div>
-	<script src="./lib/p5.js"></script>
+	</div>
+
+	<div id="footer">
+		<p>jacobg.dev</p>
+		<div id="social-icons">
+			<a class="icons" href="https://github.com/jakescript"><i class="fab fa-github"></i></a>
+			<a class="icons" href="linkedin.com/in/findingjake/"><i class="fab fa-linkedin"></i></a>
+		</div>
+		
+	</div>
+
 	<script class="logo" src="./sketch.js"></script>
 	<script src="./page.js"></script>
 </body>

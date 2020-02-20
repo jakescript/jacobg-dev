@@ -2,7 +2,7 @@
 let font;
 let bounds;
 let pts;
-let size = 150;
+let size;
 let name = "jacob g";
 let len = 10
 function preload(){
@@ -21,12 +21,12 @@ function setup() {
 
 let color;
 function draw() {
-  background("#0C4A60");
+  background("#0B0C10");
   strokeWeight(3);
   beginShape()
   for(let i = 0; i < pts.length; i++){
     // colorMode(HSL)
-    stroke("#EF6C33 ");
+    stroke("#66FCF1");
     
     let pt = pts[i]
     push()
@@ -42,13 +42,13 @@ function draw() {
 //Responsive Logo
 function rescale(x) {
   if (x.matches) { // If media query matches
-    size = 90;
-    len = 5;
+    size = 70;
+    len = 3;
   } else {
     size = 150;
   }
 }
 
-var x = window.matchMedia("(max-width: 700px)")
+var x = window.matchMedia("(max-width: 590px)")
 rescale(x) // Call listener function at run time
 x.addListener(rescale) // Attach listener function on state changes
