@@ -15,20 +15,76 @@ p{
 	align-items: center;
 }
 
+#navbar{
+	background-color: black;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 8vh;
+	display: grid;
+	grid-template-columns: 20% 60%;
+	text-align: left;
+	align-items: center;
+	justify-content: space-around;
+	justify-content: center;
+	transition: all 0.3s ease;
+
+}
+
+#navbar:hover{
+	color: black;
+	background-color: white;
+}
+
+#navbar:hover a{
+	color: grey;
+}
+
+#navbar label{
+	display: none;
+	padding-right: 40px;
+}
+
+#toggler{
+	display: none;
+}
+
+.links{
+	text-align: right;
+}
+
+.links a{
+	padding-left: 30px;
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.links a:hover{
+	color: #45A29E;
+}
+
 #top-section{
 	height: 700px;
 	text-align: center;
 }
 
 #top-titles{
-	padding-bottom: 250px;
+	padding-bottom: 50px;
 }
 
 .icons{
 	color: white;
 	font-size: 3em;
 	text-decoration: none;
-	padding: 10px;
+	padding: 10px;	
+}
+
+#arrow i{
+	animation-name: hover;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
 }
 
 #sketch-holder {
@@ -48,6 +104,10 @@ p{
 .about-me{
 	height: auto;
 	padding-bottom: 30px;
+}
+
+.highlight_text{
+	color: #45A29E;
 }
 
 .about-me h1{
@@ -114,6 +174,15 @@ p{
 
 #social-icons{
 	font-size: 6px;
+
+}
+
+#social-icons a{
+	transition: all 0.3s ease;
+}
+
+#social-icons a:hover{
+	color: #45A29E;
 }
 
 #footer{
@@ -135,11 +204,64 @@ p{
 	#top-titles{
 		padding-bottom: 150px;
 	}
+
 	.about-cards{
 		grid-template-columns: 100%;
 	}
-
+	
 	.project-cards{
 		grid-template-columns: 100%;
 	}
+
+	.project-cards p{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	#navbar label{
+		display: block;
+		cursor: pointer;
+		text-align: right;
+	}
+
+	#navbar{
+		grid-template-columns: 100%;
+		grid-template-rows: 7vh;
+		padding-right: 50px;
+	}
+
+	.links{
+		display: none;
+	}
+
+	.links a{
+		color: black;
+		/*width: 100vw;*/
+		padding: 40px 0;
+		padding-right: 40px;
+		display: block;
+		background-color: white;
+	}
+
+	#navbar h3{
+		display: none;
+	}
+
+	#toggler:checked + .links{
+		display: block;
+	}
+}
+
+@keyframes hover{
+	0%{
+		transform: translateY(-10px);
+	}
+	50%{
+		transform: translateY(5px);
+	}
+	100%{
+		transform: translateY(-10px);
+	}
+
 }
